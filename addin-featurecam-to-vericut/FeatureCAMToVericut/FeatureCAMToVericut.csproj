@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{347A8622-D01B-4773-802E-F4DBA0BA10AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FeatureCAMToVericut</RootNamespace>
+    <AssemblyName>FeatureCAMToVericut</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SourceCode\MessageDisplay.cs" />
+    <Compile Include="SourceCode\UI\ClampsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceCode\UI\ClampsDlg.Designer.cs">
+      <DependentUpon>ClampsDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCode\UI\ClampsDlg_TurnMill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceCode\UI\ClampsDlg_TurnMill.Designer.cs">
+      <DependentUpon>ClampsDlg_TurnMill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCode\UI\StockDesignDlg_TurnMill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceCode\UI\StockDesignDlg_TurnMill.Designer.cs">
+      <DependentUpon>StockDesignDlg_TurnMill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCode\UI\UCSsDlg_TurnMill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceCode\UI\UCSsDlg_TurnMill.Designer.cs">
+      <DependentUpon>UCSsDlg_TurnMill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCode\UI\StockDesignDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceCode\UI\StockDesignDlg.Designer.cs">
+      <DependentUpon>StockDesignDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCode\Init.cs" />
+    <Compile Include="SourceCode\UI\MachineTurretsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceCode\UI\MachineTurretsDlg.Designer.cs">
+      <DependentUpon>MachineTurretsDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCode\Exporter.cs" />
+    <Compile Include="SourceCode\UI\MultiSolidSelectionDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceCode\UI\MultiSolidSelectionDlg.Designer.cs">
+      <DependentUpon>MultiSolidSelectionDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCode\Tool.cs" />
+    <Compile Include="SourceCode\UI\ToolOptionsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceCode\UI\ToolOptionsDlg.Designer.cs">
+      <DependentUpon>ToolOptionsDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCode\UI\UCSsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceCode\UI\UCSsDlg.Designer.cs">
+      <DependentUpon>UCSsDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCode\UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceCode\UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCode\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SourceCode\Variables.cs" />
+    <Compile Include="SourceCode\VcProject_Manager.cs" />
+    <Compile Include="SourceCode\VericutMachineReader.cs" />
+    <Compile Include="SourceCode\UI\VericutOptionsDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceCode\UI\VericutOptionsDlg.Designer.cs">
+      <DependentUpon>VericutOptionsDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SourceCode\UI\WorkOffsetDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SourceCode\UI\WorkOffsetDlg.Designer.cs">
+      <DependentUpon>WorkOffsetDlg.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FeatureCAMExporter\FeatureCAMExporter.csproj">
+      <Project>{79B7815B-AB6E-4CEB-B98D-A67BDC2CB1E9}</Project>
+      <Name>FeatureCAMExporter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SourceCode\UI\ClampsDlg.resx">
+      <DependentUpon>ClampsDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceCode\UI\ClampsDlg_TurnMill.resx">
+      <DependentUpon>ClampsDlg_TurnMill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceCode\UI\MachineTurretsDlg.resx">
+      <DependentUpon>MachineTurretsDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceCode\UI\StockDesignDlg_TurnMill.resx">
+      <DependentUpon>StockDesignDlg_TurnMill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceCode\UI\UCSsDlg_TurnMill.resx">
+      <DependentUpon>UCSsDlg_TurnMill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceCode\UI\StockDesignDlg.resx">
+      <DependentUpon>StockDesignDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceCode\UI\MultiSolidSelectionDlg.resx">
+      <DependentUpon>MultiSolidSelectionDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceCode\UI\ToolOptionsDlg.resx">
+      <DependentUpon>ToolOptionsDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceCode\UI\UCSsDlg.resx">
+      <DependentUpon>UCSsDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceCode\UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceCode\UI\VericutOptionsDlg.resx">
+      <DependentUpon>VericutOptionsDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SourceCode\UI\WorkOffsetDlg.resx">
+      <DependentUpon>WorkOffsetDlg.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="FeatureCAM">
+      <Guid>{A36FB69C-863C-4A65-84E2-221867B0D191}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>11</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

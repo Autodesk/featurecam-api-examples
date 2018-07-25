@@ -1,0 +1,17 @@
+# addin-featurecam-to-vericut
+
+Addin for FeatureCAM that exports stock, clamps, workpiece, tools, nc code and other required data from FeatureCAM to VERICUT.
+
+A library called MR_wrapper.dll is required to run this addin. It is not distributed with this package, but needs to be requested from CGTech (Vericut).  The project expects it to be placed on the same folder as the solution file.
+
+The project solution creates a .dll which can be loaded into FeatureCAM via the "Manage Add-Ins" dialog (on the Add-Ins tab of the ribbon).  In order to run the add-in, you will need to be sure that copies of the Icons and Localization folders exist at the same location as the dll.  For example, when debugging:
+
+    .../bin/Debug
+		Icons
+			icon_16.bmp
+			icon_24.bmp
+		Localization
+			l.Chs
+			l.Esp
+			...
+		FeatureCAMToVericut.dll

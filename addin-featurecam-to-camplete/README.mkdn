@@ -1,0 +1,12 @@
+# addin-featurecam-to-camplete
+
+Addin for FeatureCAM that exports stock, clamps, workpiece, tools, nc code and other required data from FeatureCAM to CAMplete.
+
+The project solution creates a .dll which can be loaded into FeatureCAM via the "Manage Add-Ins" dialog (on the Add-Ins tab of the ribbon).  In order to run the add-in, you will need to be sure that a copy of the Icons folder exists in a folder called FeatureCAMToCAMplete at the same location as the dll.  For example, when debugging:
+
+    .../bin/Debug
+		FeatureCAMToCAMplete
+			Icons
+				icon_16.bmp
+				icon_24.bmp
+		FeatureCAMToCAMplete.dll

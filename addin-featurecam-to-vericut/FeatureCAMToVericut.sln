@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureCAMToVericut", "FeatureCAMToVericut\FeatureCAMToVericut.csproj", "{347A8622-D01B-4773-802E-F4DBA0BA10AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureCAMExporter", "FeatureCAMExporter\FeatureCAMExporter.csproj", "{79B7815B-AB6E-4CEB-B98D-A67BDC2CB1E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{347A8622-D01B-4773-802E-F4DBA0BA10AC}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{347A8622-D01B-4773-802E-F4DBA0BA10AC}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{347A8622-D01B-4773-802E-F4DBA0BA10AC}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{347A8622-D01B-4773-802E-F4DBA0BA10AC}.Release|Mixed Platforms.Build.0 = Release|x86
+		{79B7815B-AB6E-4CEB-B98D-A67BDC2CB1E9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{79B7815B-AB6E-4CEB-B98D-A67BDC2CB1E9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{79B7815B-AB6E-4CEB-B98D-A67BDC2CB1E9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{79B7815B-AB6E-4CEB-B98D-A67BDC2CB1E9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

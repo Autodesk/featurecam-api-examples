@@ -1,0 +1,18 @@
+# addin-featurecam-to-ncsimul
+
+Addin for FeatureCAM that exports stock, clamps, workpiece, tools, nc code and other required data from FeatureCAM to NCSIMUL.
+
+The project solution creates a .dll which can be loaded into FeatureCAM via the "Manage Add-Ins" dialog (on the Add-Ins tab of the ribbon).  In order to run the add-in, you will need to be sure that copies of the Icons and Localization folders exist in a folder called FeatureCAMToNCSIMUL at the same location as the dll.  For example, when debugging:
+
+    .../bin/Debug
+		FeatureCAMToNCSIMUL
+			Icons
+				icon_16.bmp
+				icon_24.bmp
+			Localization
+				l.deu
+				l.eng
+				l.fra
+		FeatureCAMToNCSIMUL.dll
+
+This add-in can only be executed if NCSIMUL is installed on the computer.

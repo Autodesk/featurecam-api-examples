@@ -1,0 +1,5 @@
+' Distribute: yes
+' ListAs: Export
+' Desc: FeatureCAM to VERICUT$
+' Desc: The plugin exports stock, clamps, workpiece, tools, nc code and other required data from FeatureCAM to VERICUT.$$
+' Desc: License required: VERICUTEXPORT

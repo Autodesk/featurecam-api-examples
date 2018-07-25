@@ -1,0 +1,16 @@
+Russian;Rus;ru;Windows-1251
+French;Fra;fr;iso-8859-1
+German;Deu;de;iso-8859-1
+Chinese Trad;Cht;cn;gb2312
+Chinese Simp;Chs;cn;gb2312
+Czech;Csy;cs;Windows-1250
+Italian;Ita;it;iso-8859-1
+Japanese;Jpn;ja;shift_jis
+Portuguese BR;Ptb;pt-br;iso-8859-1
+Spanish;Esp;es;iso-8859-1
+Hungarian;Hun;hu;iso-8859-2
+Polish;Plk;pl;Windows-1250
+Korean;Kor;ko;euc-kr
+Turkish;Trk;tr;utf-8
+Finnish;Fin;fiISO-8859-1
+Bulgarian;Bgr;bg;Windows-1251

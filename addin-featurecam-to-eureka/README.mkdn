@@ -1,0 +1,5 @@
+# addin-featurecam-to-eureka
+
+Addin for FeatureCAM that exports stock, clamps, workpiece, tools, nc code and other required data from FeatureCAM to EUREKA.
+
+This add-in requires that Eureka be installed on the computer in order to compile (or execute).   A Eureka library is used, and template files are extracted from the Eureka installation at runtime.
